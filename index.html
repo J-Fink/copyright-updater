@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Copyright Updater</title>
+</head>
+<body>
+    <p>&copy; <span id="starting-year"></span>-<span id="current-year"></span> Company Name. All rights reserved. | Company Address | Company Phone Number</p>
+
+    <script>
+        updateYear();
+        function updateYear(){
+        let startingYear = document.getElementById('starting-year');
+        startingYear.textContent = '2012';
+        let currentYear = document.getElementById('current-year');
+        let currentDate = new Date();
+        currentYear.textContent = currentDate.getFullYear();
+        } 
+    </script>
+</body>
+</html>
